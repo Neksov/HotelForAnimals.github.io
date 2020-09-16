@@ -347,6 +347,11 @@ a {
   max-width: 1170px;
   margin: auto; }
 
+.container2 {
+  width: 100%;
+  max-width: 1366px;
+  margin: auto; }
+
 .btn {
   padding: 1rem 2.3rem;
   border: none;
@@ -419,9 +424,8 @@ input.invalid {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  z-index: 20; }
-  .logo__cat {
-    padding-bottom: 3px; }
+  z-index: 20;
+  margin-top: 3px; }
   .logo__mobile {
     display: none; }
 
@@ -461,13 +465,50 @@ input.invalid {
   .contacts__social img {
     margin-right: 18px; }
 
+.main__fone {
+  position: relative; }
+
+.fone__first {
+  width: 100%; }
+
+.fone__second {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  margin-left: 198px;
+  margin-top: 225px;
+  font-style: normal; }
+  .text__address {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px; }
+  .text__name {
+    font-family: 'Rubik';
+    letter-spacing: 2.8px;
+    font-weight: bold;
+    font-size: 62px; }
+  .text__hotel {
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.4px; }
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .container {
     max-width: 678px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .container {
-    max-width: 678px; }
   .header {
     height: 52px;
     display: -webkit-box;
@@ -480,7 +521,8 @@ input.invalid {
       margin-top: 3px;
       margin-left: -1px; }
     .logo__mobile {
-      display: block; }
+      display: block;
+      margin-right: auto; }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -494,7 +536,6 @@ input.invalid {
     position: absolute;
     display: none;
     width: 20px;
-    height: 20px;
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -566,7 +607,7 @@ input.invalid {
     -ms-flex-direction: column;
     flex-direction: column;
     position: absolute;
-    top: -100%;
+    top: -200%;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -578,8 +619,8 @@ input.invalid {
     padding-top: 90px;
     padding-bottom: 100px; }
   .menu__mobile--active {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%); }
+    -webkit-transform: translateY(200%);
+    transform: translateY(200%); }
   .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

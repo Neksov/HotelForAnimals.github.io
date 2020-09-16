@@ -1,10 +1,7 @@
 @media  screen and (min-width : 768px) and (max-width : 992px)
   .container
     max-width: 678px
-
 @media  screen and (min-width : 320px) and (max-width : 767px)
-  .container
-    max-width: 678px
   .header 
     height: 52px
     display: flex
@@ -16,6 +13,7 @@
       margin-left: -1px
     &__mobile
       display: block
+      margin-right: auto
   .menu
     display: flex
     &__contacts
@@ -27,7 +25,6 @@
     position: absolute
     display: none
     width: 20px
-    height: 20px
     cursor: pointer
     display: flex
     justify-content: center
@@ -76,7 +73,7 @@
     align-items: flex-start
     flex-direction: column
     position: absolute
-    top: -100%
+    top: -200%
     left: 0
     width: 100%
     height: 100vh
@@ -86,7 +83,7 @@
     padding-bottom: 100px
 
   .menu__mobile--active 
-    transform: translateY(100%)
+    transform: translateY(200%)
   .nav
     flex-direction: column
     align-items: flex-start
