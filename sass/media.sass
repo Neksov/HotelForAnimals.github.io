@@ -1,0 +1,75 @@
+@media  screen and (min-width : 766px) and (max-width : 992px)
+  .container
+    max-width: 678px
+
+@media  screen and (min-width : 320px) and (max-width : 765px)
+  .header 
+    height: 52px
+  .logo
+    display: none
+    &__cat
+      padding-bottom: 0px
+      margin-top: 3px
+      margin-left: -1px
+    &__mobile
+      display: block
+  .menu-icon 
+    z-index: 19
+    position: absolute
+    display: none
+    width: 20px
+    height: 20px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    right: 16px
+  .menu-icon-line 
+    position: absolute
+    width: 24px
+    height: 2px
+    background-color: #000000
+  .menu-icon-line::before 
+    position: absolute
+    left: 0
+    top: -7px
+    content: ''
+    width: 24px
+    height: 2px
+    background-color: #000000
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon-line::after 
+    position: absolute
+    left: 0
+    top: 7px
+    content: ''
+    width: 24px
+    height: 2px
+    background-color: #000000
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line 
+    background-color: transparent
+
+  .menu-icon.menu-icon-active .menu-icon-line::before 
+    transform: rotate(45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line::after 
+    transform: rotate(-45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+  .menu__nav
+    z-index: 9
+    display: block
+    position: absolute
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100vh
+    background: #FAC663
+    transition: transform 0.4s ease-in
+  .menu__nav--active 
+    transform: translateY(100%)
