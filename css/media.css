@@ -3,8 +3,13 @@
     max-width: 678px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 678px; }
   .header {
-    height: 52px; }
+    height: 52px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .logo {
     display: none; }
     .logo__cat {
@@ -13,10 +18,14 @@
       margin-left: -1px; }
     .logo__mobile {
       display: block; }
-  .menu__contacts {
-    display: block;
-    margin-left: 13px;
-    margin-top: 16px; }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .menu__contacts {
+      display: block;
+      margin-left: 13px;
+      margin-top: 16px; }
   .menu-icon {
     z-index: 19;
     position: absolute;
@@ -83,7 +92,16 @@
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s; }
   .menu__mobile {
     z-index: 9;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: absolute;
     top: -100%;
     left: 0;
@@ -104,9 +122,9 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     margin-left: -12px; }
     .nav__item {
       font-family: 'Rubik';
