@@ -30,8 +30,26 @@
     font-size: 16px
     line-height: 19px
     margin-left: 26px
+    position: relative
     a
       text-decoration: none
+    &:hover
+      color: #f3e352ee
+      text-decoration: none
+    &::after //нижнее подчеркивание
+      position: absolute
+      content: ""
+      display: block
+      height: 2px
+      border-radius: 2px
+      background-color: $orange
+      width: 0%
+      left: 50%
+      transition: .3s ease-in-out
+      transform: translateX(-50%)
+    &:hover
+      &:after
+        width: 100%
   &__second
     display: none
 .contacts
