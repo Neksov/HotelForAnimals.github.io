@@ -321,6 +321,13 @@ template {
   font-style: normal;
   font-display: wrap; }
 
+@font-face {
+  font-family: 'Rubik-Bold';
+  src: url("../fonts/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -353,20 +360,32 @@ a {
   margin: auto; }
 
 .btn {
-  padding: 1rem 2.3rem;
+  width: 206px;
+  height: 50px;
+  background: #FFFEFD url(../img/pawBtn.png) no-repeat center right 7px;
+  -webkit-box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+  box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+  border-radius: 25px;
   border: none;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 500;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  text-transform: uppercase;
-  border-radius: 35px;
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  cursor: pointer; }
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: -0.8px;
+  padding-right: 43px; }
   .btn--primary {
     background-color: #1A212F;
     color: #FFFEFD; }
@@ -465,18 +484,7 @@ input.invalid {
   .contacts__social img {
     margin-right: 18px; }
 
-.main__fone {
-  position: relative; }
-
-.fone__first {
-  width: 100%; }
-
-.fone__second {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.text {
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,25 +492,31 @@ input.invalid {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  margin-left: 198px;
-  margin-top: 225px;
-  font-style: normal; }
-  .text__address {
+  position: relative;
+  font-style: normal;
+  background: url(../img/main.png) no-repeat center/cover;
+  max-width: 100%;
+  height: 504px;
+  padding-left: 198px;
+  padding-top: 149px; }
+  .content__address {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px; }
-  .text__name {
-    font-family: 'Rubik';
-    letter-spacing: 2.8px;
-    font-weight: bold;
-    font-size: 62px; }
-  .text__hotel {
+  .content__name {
+    font-family: 'Rubik-Bold';
+    font-size: 62px;
+    letter-spacing: -0.3px; }
+  .content__hotel {
     padding-top: 5px;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.4px; }
+  .content__btn {
+    margin-top: 36px; }
+    .content__btn:hover {
+      background: #FF7236 url(../img/pawHover.png) no-repeat center right 7px;
+      color: #ffffff; }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .container {
