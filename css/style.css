@@ -504,7 +504,11 @@ input.invalid {
     margin-right: 18px; }
 
 .main {
-  width: 100%; }
+  background: url(../img/main.png) no-repeat center/cover;
+  padding-left: 198px;
+  padding-top: 149px;
+  padding-bottom: 154px;
+  height: 100vh; }
 
 .content {
   display: -webkit-box;
@@ -514,11 +518,7 @@ input.invalid {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-style: normal;
-  background: url(../img/main.png) no-repeat center/cover;
-  height: 504px;
-  padding-left: 198px;
-  padding-top: 149px; }
+  font-style: normal; }
   .content__address {
     font-weight: normal;
     font-size: 14px;
@@ -539,20 +539,22 @@ input.invalid {
       color: #ffffff; }
 
 @media screen and (min-width: 992px) and (max-width: 1366px) {
-  .content {
+  .main {
     padding-left: 50px; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .content {
+  .main {
+    height: 100vh;
     text-align: center;
     padding-top: 136px;
+    padding-bottom: 733px;
     padding-left: 0px;
-    background: url(../img/mainTable.png) no-repeat center/cover;
-    height: 868px; }
-    .content__btn {
-      display: block;
-      margin: auto;
-      margin-top: 36px; }
+    background: url(../img/mainTable.png) no-repeat center;
+    background-size: 100% 100%; }
+  .content__btn {
+    display: block;
+    margin: auto;
+    margin-top: 36px; }
   .nav__item {
     margin-left: 29px; }
   .logo {
@@ -691,20 +693,22 @@ input.invalid {
       display: none; }
     .nav__second {
       display: block; }
-  .content {
+  .main {
+    height: 100vh;
     text-align: center;
     padding-top: 46px;
+    padding-bottom: 411px;
     padding-left: 0px;
-    background: url(../img/mainMobile.png) no-repeat center/cover;
-    height: 457px; }
-    .content__btn {
-      display: block;
-      margin: auto;
-      margin-top: 36px; }
-    .content__address {
-      font-size: 12px; }
-    .content__name {
-      font-size: 44px; }
-    .content__hotel {
-      font-size: 16px;
-      padding-top: 9px; } }
+    background: url(../img/mainMobile.png) no-repeat center;
+    background-size: 100% 100%; }
+  .content__btn {
+    display: block;
+    margin: auto;
+    margin-top: 36px; }
+  .content__address {
+    font-size: 12px; }
+  .content__name {
+    font-size: 44px; }
+  .content__hotel {
+    font-size: 16px;
+    padding-top: 9px; } }
