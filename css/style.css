@@ -549,8 +549,7 @@ input.invalid {
     padding-top: 136px;
     padding-bottom: 733px;
     padding-left: 0px;
-    background: url(../img/mainTable.png) no-repeat center;
-    background-size: 100% 100%; }
+    background: url(../img/mainTable.png) no-repeat center/cover; }
   .content__btn {
     display: block;
     margin: auto;
@@ -697,10 +696,10 @@ input.invalid {
     height: 100vh;
     text-align: center;
     padding-top: 46px;
-    padding-bottom: 411px;
+    padding-bottom: 100%;
     padding-left: 0px;
-    background: url(../img/mainMobile.png) no-repeat center;
-    background-size: 100% 100%; }
+    background: url(../img/mainMobile.png) no-repeat center center;
+    background-size: cover; }
   .content__btn {
     display: block;
     margin: auto;
