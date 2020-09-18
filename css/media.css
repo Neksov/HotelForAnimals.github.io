@@ -9,7 +9,8 @@
     padding-top: 136px;
     padding-bottom: 733px;
     padding-left: 0px;
-    background: url(../img/mainTable.png) no-repeat center/cover; }
+    background: url(../img/mainTable.png) no-repeat center/cover;
+    background-position-y: bottom; }
   .content__btn {
     display: block;
     margin: auto;
@@ -158,8 +159,8 @@
     padding-top: 46px;
     padding-bottom: 100%;
     padding-left: 0px;
-    background: url(../img/mainMobile.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../img/mainMobile.png) no-repeat center/cover;
+    background-position-y: bottom; }
   .content__btn {
     display: block;
     margin: auto;
