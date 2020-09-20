@@ -658,10 +658,10 @@ input.invalid {
     -ms-flex-direction: column;
     flex-direction: column;
     position: absolute;
-    top: -200%;
+    top: -100%;
     left: 0;
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     background: #FAC663;
     -webkit-transition: -webkit-transform 0.4s ease-in;
     transition: -webkit-transform 0.4s ease-in;
@@ -670,8 +670,8 @@ input.invalid {
     padding-top: 90px;
     padding-bottom: 100px; }
   .menu__mobile--active {
-    -webkit-transform: translateY(200%);
-    transform: translateY(200%); }
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
   .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
