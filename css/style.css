@@ -386,25 +386,11 @@ a {
   font-family: 'Lato', sans-serif;
   letter-spacing: -0.8px;
   padding-right: 43px; }
-  .btn--primary {
-    background-color: #1A212F;
-    color: #FFFEFD; }
-  .btn--light {
-    background: #FAF9F9;
-    border: 1px solid #E5E5E5; }
   .btn:hover {
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn:active, .btn:focus {
     outline: none; }
-
-label.invalid {
-  position: absolute;
-  margin-top: 53px;
-  color: #1A212F; }
-
-input.invalid {
-  border-bottom: 1px solid #1A212F; }
 
 .header {
   height: 76px;
@@ -505,10 +491,9 @@ input.invalid {
 
 .main {
   background: url(../img/main.png) no-repeat center/cover;
-  padding-left: 198px;
+  padding-left: 136px;
   padding-top: 149px;
-  padding-bottom: 154px;
-  height: 100vh; }
+  padding-bottom: 154px; }
 
 .content {
   display: -webkit-box;
@@ -538,7 +523,7 @@ input.invalid {
       background: #FF7236 url(../img/pawHover.png) no-repeat center right 7px;
       color: #ffffff; }
 
-@media screen and (min-width: 992px) and (max-width: 1366px) {
+@media screen and (min-width: 992px) and (max-width: 1365px) {
   .main {
     padding-left: 50px; } }
 
