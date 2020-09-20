@@ -127,8 +127,7 @@
     transition: -webkit-transform 0.4s ease-in;
     transition: transform 0.4s ease-in;
     transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
-    padding-top: 90px;
-    padding-bottom: 100px; }
+    padding-top: 90px; }
   .menu__mobile--active {
     -webkit-transform: translateY(100%);
     transform: translateY(100%); }
