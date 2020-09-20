@@ -349,6 +349,9 @@ body {
 a {
   color: #1A212F; }
 
+section {
+  margin-top: 130px; }
+
 .container {
   width: 90%;
   max-width: 1170px;
@@ -391,6 +394,19 @@ a {
     box-shadow: none; }
   .btn:active, .btn:focus {
     outline: none; }
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'Rubik-Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px; }
 
 .header {
   height: 76px;
@@ -523,11 +539,69 @@ a {
       background: #FF7236 url(../img/pawHover.png) no-repeat center right 7px;
       color: #ffffff; }
 
+.service {
+  position: relative; }
+  .service__paw {
+    position: absolute;
+    top: -121px;
+    right: 0;
+    z-index: 1; }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 61px;
+  margin-left: 0; }
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 370px;
+  min-height: 321px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 14px;
+  z-index: 10;
+  margin-right: 15px;
+  margin-left: 15px; }
+  .card__title {
+    font-family: 'Rubik-Bold';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    margin-top: 28px;
+    letter-spacing: -0.4px; }
+  .card__text {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 8px;
+    max-width: 291px; }
+
 @media screen and (min-width: 992px) and (max-width: 1365px) {
   .main {
-    padding-left: 50px; } }
+    padding-left: 10px; } }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  section {
+    margin-top: 111px; }
   .main {
     height: 100vh;
     text-align: center;
@@ -543,7 +617,27 @@ a {
   .nav__item {
     margin-left: 29px; }
   .logo {
-    margin-left: 7px; } }
+    margin-left: 7px; }
+  .service__paw {
+    top: -93px;
+    right: -32px;
+    width: 32%; }
+  .cards {
+    margin-top: 50px; }
+  .card {
+    width: 324px;
+    min-height: 285px;
+    padding: 25px;
+    margin-bottom: 28px; }
+    .card__img {
+      width: 75px;
+      height: 75px; }
+    .card__title {
+      font-size: 20px;
+      margin-top: 23px; }
+    .card__text {
+      font-size: 15px;
+      width: 262px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
@@ -695,4 +789,28 @@ a {
     font-size: 44px; }
   .content__hotel {
     font-size: 16px;
-    padding-top: 9px; } }
+    padding-top: 9px; }
+  section {
+    margin-top: 59px; }
+  .title {
+    font-size: 28px; }
+  .service__paw {
+    top: -11px;
+    right: -11px;
+    width: 30%; }
+  .cards {
+    margin-top: 28px; }
+  .card {
+    width: 290px;
+    max-height: 289px;
+    padding: 25px;
+    margin-bottom: 25px; }
+    .card__img {
+      width: 60px;
+      height: 60px; }
+    .card__title {
+      font-size: 18px;
+      margin-top: 25px; }
+    .card__text {
+      font-size: 15px;
+      width: 218px; } }
