@@ -1,0 +1,191 @@
+@media  screen and (min-width : 992px) and (max-width : 1365px)
+  .main
+    padding-left: 10px
+@media  screen and (min-width : 768px) and (max-width : 991px)
+  section
+    margin-top: 111px
+  .main
+    height: 100vh
+    text-align: center
+    padding-top: 136px
+    padding-bottom: 733px
+    padding-left: 0px
+    background: url(../img/mainTable.png) no-repeat center/cover 
+    background-position-y: bottom
+  .content
+    &__btn
+      display: block
+      margin: auto
+      margin-top: 36px
+  .nav
+    &__item
+      margin-left: 29px
+  .logo
+    margin-left: 7px
+  .service
+    &__paw 
+      top: -93px
+      right: -32px
+      width: 32%
+  .cards
+    margin-top: 50px
+  .card
+    width: 324px
+    min-height: 285px
+    padding: 22px
+    padding-top: 27px
+    margin-bottom: 28px
+    &__img
+      width: 75px
+      height: 75px
+    &__title
+      font-size: 20px
+      margin-top: 23px
+    &__text
+      font-size: 15px
+      min-width: 310px
+      letter-spacing: 0.6px
+@media  screen and (min-width : 320px) and (max-width : 767px)
+  .header 
+    height: 62px
+    display: flex
+  .logo
+    display: none
+    &__cat
+      padding-bottom: 0px
+      margin-left: -1px
+    &__mobile
+      display: block
+      margin-right: auto
+  .menu
+    display: flex
+    &__contacts
+      display: block
+      margin-left: 13px
+      margin-top: 16px
+  .menu-icon 
+    z-index: 19
+    position: absolute
+    display: none
+    width: 20px
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    right: 21px
+  .menu-icon-line 
+    position: absolute
+    width: 24px
+    height: 2px
+    background-color: #000000
+  .menu-icon-line::before 
+    position: absolute
+    left: 0
+    top: -7px
+    content: ''
+    width: 24px
+    height: 2px
+    background-color: #000000
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon-line::after 
+    position: absolute
+    left: 0
+    top: 7px
+    content: ''
+    width: 24px
+    height: 2px
+    background-color: #000000
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line 
+    background-color: transparent
+
+  .menu-icon.menu-icon-active .menu-icon-line::before 
+    transform: rotate(45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+
+  .menu-icon.menu-icon-active .menu-icon-line::after 
+    transform: rotate(-45deg)
+    top: 0
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+  .menu__mobile
+    z-index: 9
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    position: absolute
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100%
+    background: #FAC663
+    transition: transform 0.4s ease-in
+    padding-top: 90px
+    // padding-bottom: 100px
+
+  .menu__mobile--active 
+    transform: translateY(100%)
+  .nav
+    flex-direction: column
+    align-items: flex-start
+    margin-left: -12px
+    &__item
+      font-family: 'Rubik'
+      font-style: normal
+      font-weight: 500
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 15px
+      letter-spacing: 0.5px
+    &__first
+      display: none
+    &__second
+      display: block
+  .main
+    height: 100vh
+    text-align: center
+    padding-top: 46px
+    padding-bottom: 100%
+    padding-left: 0px
+    background: url(../img/mainMobile.png) no-repeat center/cover 
+    background-position-y: bottom
+  .content
+    &__btn
+      display: block
+      margin: auto
+      margin-top: 36px
+    &__address
+      font-size: 12px
+    &__name
+      font-size: 44px
+    &__hotel
+      font-size: 16px
+      padding-top: 9px
+  section
+    margin-top: 59px
+  .title
+    font-size: 28px
+  .service
+    &__paw 
+      top: -11px
+      right: -11px
+      width: 30%
+  .cards
+    margin-top: 28px
+  .card
+    width: 290px
+    min-height: 239px
+    padding: 25px
+    margin-bottom: 25px
+    &__img
+      width: 60px
+      height: 60px
+    &__title
+      width: 290px
+      font-size: 18px
+      margin-top: 25px
+    &__text
+      font-size: 15px
+      width: 247px

@@ -1,42 +1,41 @@
 {
-  "name": "mask.github.io",
+  "name": "FirstProject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-group-css-media-queries": "^1.2.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "del": "^6.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.2.2",
+    "gulp-fonter": "^0.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html": "^1.0.2",
+    "gulp-webpcss": "^1.1.1",
+    "webp-converter": "^2.2.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Neksov/mask.github.io.git"
+    "url": "git+https://github.com/Neksov/FirstProject.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Neksov/mask.github.io/issues"
+    "url": "https://github.com/Neksov/FirstProject/issues"
   },
-  "browserslist": [
-    "defaults",
-    "not IE 11",
-    "not IE_Mob 11",
-    "maintained node versions"
-  ],
-  "homepage": "https://github.com/Neksov/mask.github.io#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-minify": "^3.1.0",
-    "gulp-newer": "^1.4.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "imagemin-pngquant": "^8.0.0"
-  },
-  "dependencies": {
-    "browser-sync": "^2.26.7"
-  }
+  "homepage": "https://github.com/Neksov/FirstProject#readme"
 }
